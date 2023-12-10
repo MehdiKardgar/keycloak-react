@@ -9,6 +9,7 @@ const useAuth = () => {
 
   useEffect(() => {
     if (isRun.current) return;
+
     isRun.current = true;
 
     KeycloakClient.init({
